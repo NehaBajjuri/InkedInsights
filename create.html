@@ -59,34 +59,49 @@
                </div>
         </nav>
     </header>
-  <h1>Create Blog Post</h1>
-  <form id="blogForm" class="heading">
-    <div>
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="title" required>
-    </div>
-    <div>
-      <label for="category">Category:</label>
-      <input type="text" id="category" name="category" required>
-    </div>
-    <div>
-      <label for="author">Author's Name:</label>
-      <input type="text" id="author" name="author" required>
-    </div>
-    <div>
-      <label for="bio">Author's Bio:</label>
-      <textarea id="bio" name="bio" required></textarea>
-    </div>
-    <div>
-      <label for="image">Image:</label>
-      <input type="file" id="image" name="image" accept="image/*" required>
-    </div>
-    <div>
-      <label for="content" >Content:</label>
-      <textarea id="content" class="content" name="content" required></textarea>
-    </div>
-    <button type="submit">Create Post</button>
-  </form>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Create Blog Post</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>Create Blog Post</h1>
+        <form action="#" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+          </div>
+          <div class="form-group">
+            <label for="author">Author's Name:</label>
+            <input type="text" id="author" name="author" required>
+          </div>
+          <div class="form-group">
+            <label for="bio">Author's Bio:</label>
+            <textarea id="bio" name="bio" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Create Post">
+          </div>
+        </form>
+      </div>
+    </body>
+    </html>
+    
   <script src="script.js"></script>
   <footer id="footer">
     <div class="container">

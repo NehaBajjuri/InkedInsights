@@ -1,50 +1,38 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  form div {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-  }
-  .content
-  {
-    height: 150px;
-  }
-  .heading
-  {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px;
-  }
-  
-  button[type="submit"] {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
