@@ -1,189 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inked Insights</title>
-    
-        <!-- font awesome icons cdn -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    
-        <!-- swiper slider css file -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
-    
-        <!-- custom style.css file -->
-        <link rel="stylesheet" href="blogpost.css">
-        <link rel="stylesheet" href="style.css">
-    
-    </head>
-    <body>
-    <header id="header" class="shadow bg-light">
-        <nav class="container navbar">
-            <a href="/index.html" class="nav-brand text-dark">
-                 Inked Insights
-             </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
 
-             <!-- toggle button -->
-             <button class="toggle-button">
-                 <span><i class="fas fa-bars"></i></span>
-             </button>
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
-             <!-- collapse on toggle button click -->
-             <div class="collapse">
-                 <ul class="navbar-nav">
-                     <a href="#" class="nav-link">Home</a>
-                     <!-- <a href="#" class="nav-link">Blog</a>
-                     <a href="#" class="nav-link">Pages</a> -->
-                     <a href="#category" class="nav-link">Categories</a>
-                     <a href="#About" class="nav-link">About</a>
-                     <a href="#" class="nav-link">Contact</a>
-                 </ul>
-             </div>
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
 
-               <!-- collapse on toggle button click -->
-               <div class="collapse">
-                   <ul class="navbar-nav">
-                         <div class="search-box">
-                             <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                         </div>
-                         <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                         <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                         <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                         <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
-                   </ul>
-               </div>
-        </nav>
-    </header>
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="style.css">
 
- 
-    <div class="max-width-1 m-auto">
-        <hr>
-    </div>
-    <!-- <div class="post-img">
-        <img src="img/11.svg" alt="">
-    </div>
-    <div class="m-auto blog-post-content max-width-2 m-auto my-2">
-        <h1 class="font1">The heaven for bloggers</h1> -->
-        <div class="blogpost-meta">
-            <div class="author-info">
-                <div>
-                <b>
-                  Author - Bill Gates (CEO Microtek)
-                </b>
+</head>
+<body>
+    
+    <!-- Header -->
+       <header id="header" class="shadow bg-light">
+           <nav class="container navbar">
+               <a href="/index.html" class="nav-brand text-dark">
+                   InkedInsights
+                </a>
+
+                <!-- toggle button -->
+                <button class="toggle-button">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+
+                <!-- collapse on toggle button click -->
+                <div class="collapse">
+                    <ul class="navbar-nav">
+                        <a href="/index.html" class="nav-link">Home</a>
+                        <!-- <a href="#" class="nav-link">Blog</a>
+                        <a href="#" class="nav-link">Pages</a> -->
+                        <a href="/sidebar.html" class="nav-link">Categories</a>
+                        <a href="#About" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </ul>
                 </div>
-                <div>04 January. 6 min read</div>
-            </div>
-            <div class="social">
-                <svg width="29" height="29" class="hk"><path d="M22.05 7.54a4.47 4.47 0 0 0-3.3-1.46 4.53 4.53 0 0 0-4.53 4.53c0 .35.04.7.08 1.05A12.9 12.9 0 0 1 5 6.89a5.1 5.1 0 0 0-.65 2.26c.03 1.6.83 2.99 2.02 3.79a4.3 4.3 0 0 1-2.02-.57v.08a4.55 4.55 0 0 0 3.63 4.44c-.4.08-.8.13-1.21.16l-.81-.08a4.54 4.54 0 0 0 4.2 3.15 9.56 9.56 0 0 1-5.66 1.94l-1.05-.08c2 1.27 4.38 2.02 6.94 2.02 8.3 0 12.86-6.9 12.84-12.85.02-.24 0-.43 0-.65a8.68 8.68 0 0 0 2.26-2.34c-.82.38-1.7.62-2.6.72a4.37 4.37 0 0 0 1.95-2.51c-.84.53-1.81.9-2.83 1.13z"></path></svg>
 
-                <svg style="background: black;
-                border-radius: 21px;" width="29" height="29" viewBox="0 0 29 29" fill="none" class="hk"><path d="M5 6.36C5 5.61 5.63 5 6.4 5h16.2c.77 0 1.4.61 1.4 1.36v16.28c0 .75-.63 1.36-1.4 1.36H6.4c-.77 0-1.4-.6-1.4-1.36V6.36z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.76 20.9v-8.57H7.89v8.58h2.87zm-1.44-9.75c1 0 1.63-.65 1.63-1.48-.02-.84-.62-1.48-1.6-1.48-.99 0-1.63.64-1.63 1.48 0 .83.62 1.48 1.59 1.48h.01zM12.35 20.9h2.87v-4.79c0-.25.02-.5.1-.7.2-.5.67-1.04 1.46-1.04 1.04 0 1.46.8 1.46 1.95v4.59h2.87v-4.92c0-2.64-1.42-3.87-3.3-3.87-1.55 0-2.23.86-2.61 1.45h.02v-1.24h-2.87c.04.8 0 8.58 0 8.58z" fill="#fff"></path></svg>
+                  <!-- collapse on toggle button click -->
+                  <div class="collapse">
+                      <ul class="navbar-nav">
+                            <div class="search-box">
+                                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                            </div>
+                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+                      </ul>
+                  </div>
+           </nav>
+       </header>
+    <!-- .Header -->
 
-                <svg width="29" height="29" class="hk"><path d="M23.2 5H5.8a.8.8 0 0 0-.8.8V23.2c0 .44.35.8.8.8h9.3v-7.13h-2.38V13.9h2.38v-2.38c0-2.45 1.55-3.66 3.74-3.66 1.05 0 1.95.08 2.2.11v2.57h-1.5c-1.2 0-1.48.57-1.48 1.4v1.96h2.97l-.6 2.97h-2.37l.05 7.12h5.1a.8.8 0 0 0 .79-.8V5.8a.8.8 0 0 0-.8-.79"></path></svg>
+    <!-- Main Site -->
+       <main id="site-main">
 
-            </div>
-        </div>
-         <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time.
-
-            The process of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish.
-            
-            One reason for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
-         <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time.
-
-            The process of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish.
-            
-            One reason for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
-         <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time.
-
-            The process of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish.
-            
-            One reason for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
-         <p class="font1">In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel or storage in a storage medium. An early example is the invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard or felt to others. But speech limits the range of communication to the distance a voice can carry, and limits the audience to those present when the speech is uttered . The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time.
-
-            The process of encoding converts information from a source into symbols for communication or storage. Decoding is the reverse process, converting code symbols back into a form that the recipient understands, such as English or/and Spanish.
-            
-            One reason for coding is to enable communication in places where ordinary plain language, spoken or written, is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler or the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers. Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
-    </div>
-<div class="max-width-1 m-auto"><hr></div>
-    <div class="home-articles max-width-1 m-auto font2">
-        <h2>People who read this also read</h2>
-        <div class="row">
-
-       
-        <div class="home-article more-post">
-            <div class="home-article-img">
-                <img src="img/11.svg" alt="article">
-            </div>
-            <div class="home-article-content font1 center">
-                <a href="/blogpost.html"><h3>Learn more about Machine Learning techniques in India by joining this channel</h3></a>
-                
-                <div>Author Name</div>
-                <span>07 January | 6 min read</span>
-            </div>
-        </div>
-        <div class="home-article more-post">
-            <div class="home-article-img">
-                <img src="img/1.png" alt="article">
-            </div>
-            <div class="home-article-content font1 center">
-                <a href="/blogpost.html"><h3>Learn more about Machine Learning techniques in India by joining this channel</h3></a>
-                
-                <div>Author Name</div>
-                <span>07 January | 6 min read</span>
-            </div>
-        </div>
-        <div class="home-article more-post">
-            <div class="home-article-img">
-                <img src="img/2.png" alt="article">
-            </div>
-            <div class="home-article-content font1 center">
-                <a href="/blogpost.html"><h3>Learn more about Machine Learning techniques in India by joining this channel</h3></a>
-                
-                <div>Author Name</div>
-                <span>07 January | 6 min read</span>
-            </div>
-        </div>
+            <!-- Post Content -->
+                <section class="container">
+                    <div class="layout-2 row">
+                        <div class="col-8">
+                            <article id="post">
+                                <!-- article heading -->
+                                <div class="headings text-center">
+                                    <div class="category">
+                                        <a href="#" class="nav-link">Technology</a>
+                                    </div>
         
-    </div>
-    </div> --> -->
-    <footer id="footer">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-3">
-                    <h2 id="About" class="footer-title secondary-title">About Us</h2>
+                                    <div class="title">
+                                        <h2 class="text-title text-dark display-1">I Asked ChatGPT How To Earn $1000 Online. It Was Hilarious.</h2>
+                                    </div>
+        
+                                    <div class="meta">
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-user text-primary"></i> Ankush
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-clock text-primary"></i>21-Feb-2023
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-comments text-primary"></i> 2
+                                        </a>
+                                    </div>
+        
+                                </div>
+        
+                                <!-- thumbnail  -->
+                                <div class="thumbnail mt-3">
+                                    <!-- <img src="/assets/slider/travel2.avif"> -->
+                                    <img src="./assets/img14.jpeg" class="thumbnail" alt="ChatGPT">
+                                </div>
+        
+                                <!-- content -->
+                                <div class="content text-dark display-2 secondary-title mt-3">
+                                    <p>
+                                        Y’all… fair warning. I have a weird sense of humor.
+                                    </p><p>
+Probably because I’m Canadian. When you live where there’s snow half the year, and it’s hot enough to fry eggs on the sidewalk the other half, maybe a person can’t help being a bit off the beaten track.
 
-                    <div class="secondary-title text-secondary">
-                         <p class="mt-2 ">
-                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                             Deserunt quis voluptate alias illum modi tenetur, iste voluptatem illo. Accusantium, corrupti!
-                         </p>
-                         
-                         <address>
-                             <i class="fas fa-map-marker-alt text-primary"></i> 
-                             5 South Main Street Los Angeles, ZZ-96110 USA
-                         </address>
+Anyway.
+                                    </p>
+                                    <p>
+                                  
 
-                         <div class="phone">
-                             <i class="fas fa-mobile text-primary"></i> 
-                             125-896-485
-                         </div>
+                                        Unless you’ve recently crawled out from under a rock, you know the internet is full of “make money” and “side hustle” articles.
 
-                         <div class="email">
-                             <i class="fas fa-envelope text-primary"></i> 
-                             dailysupport@gmail.com
-                         </div>
+                                        I’ve been self employed most of my adult life. Know what I do? I make people money. I don’t sell internet marketing courses. I just DO marketing. Last email series I wrote did 30K the first weekend. That’s what I do.
+                                         
+                                    </p>
+                                    <p>
+                                        <b>First I asked ChatGPT for the “easiest” ways to make 1000/month online. Then I asked for details…
+                                        </b>
+                                    </p><p>
+                                        <b>1. Participate in online surveys!</b></p><p>
+
+                                        I asked ChatGPT how much they pay. The answer? Fifty cents to $5. Which means if you find the $5 ones, you only need to do TWO HUNDRED of them. At 50 cents, you’d need to do 2000 surveys. 66 every day. lol.
+                                        <p>
+                                           <i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MY OPINION: LMAO</i>
+                                           </p>
+                                    </p>
+                                    <p>
+                                        <b>2. Online tutoring at sites like Chegg or TutorMe</b></p><p>
+
+                                            Again, I asked what it pays. On average $18/hour. If you have qualifications. Which means you’d need to do 55 hours of coaching to earn $1000. Course, qualifications might be the sticky part.
+                                        <p>
+                                           <i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MY OPINION: Maybe for teachers who get paid crap?</i>
+                                           </p>
+                                    </p>
+                                    <p>
+                                        <b>3. Freelancing on Upwork or Fiverr…</b></p><p>
+                                            ChatGPT says the average order is $50. That’s only 20 orders. Omg! That seemed totally doable, so I had another question for our little hive minded friend. What percentage of sellers are making $1000???
+
+
+                                            Yikes? Half the TOP SELLERS earn over $1000? Somehow, that sounds way less likely now. Which is not to say you can’t make money on Fiverr or Upwork. But maybe it’s not so easy?
+                                        <p>
+                                           <i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MY OPINION: Dubious</i>
+                                           </p>
+                                    </p>
+                                    <p>
+                                        <b>4. Dropshipping — and a real answer at last!</b></p><p>
+                                            Finally, a real answer. Success rate depends on lots of factors. The niche, the quality of goods, and (wait for it) — your marketing accumen.
+                                        <p>
+                                           <i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">MY OPINION: Truth. At last.</i>
+                                           </p>
+                                    </p>
+                                    <p>
+                                        <b>In conclusion: making money is simple, not easy</b></p><p>
+                                            I am living, breathing proof a person can make a living online. I’ve done it for over 20 years. Most of my adult life.
+
+                                            But those articles with “easy” tips? It’s not easy. They’re playing you.
+                                            
+                                            It’s simple, not easy. Figure out what you want to sell. Learn how to build an audience. Learn how to get views. Learn how to craft an opt in that makes people want to hear from you. Learn how to send emails people open.
+                                            
+                                            The end result is worth it. My commute is real short. From the kitchen to the office. Usually in bare feet and bed head. Totally worth it.
+                                        <p>
+                                           <i style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">But the starting point is to stop confusing simple and easy.
+
+                                            They’re not the same.</i>
+                                           </p>
+                                    </p>
+                                  
+                                </div>
+                            </article>
+        
+                            <!-- post footer -->
+                            <div class="post-footer mb-3">
+                                <div class="post-tags d-flex flex-wrap justify-content-center">
+                                    <a href="#" class="nav-link btn bg-light">Travel</a>
+                                    <a href="#" class="nav-link btn bg-light">Food</a>
+                                    <a href="#" class="nav-link btn bg-light">Lifestyle</a>
+                                    <a href="#" class="nav-link btn bg-light">Technology</a>
+                                    <a href="#" class="nav-link btn bg-light">Fashion</a>
+                                </div>
+        
+                                <div class="post-author text-center">
+                                    <div class="author-avatar">
+                                        <!-- <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"class="rounded" alt=""> -->
+                                        
+                                    </div>
+        
+                                    <div class="author-info py-2">
+                                        <h3 class="text-dark">Amandaava</h3>
+        
+                                        <p class="text-secondary secondary-title">
+                                          
+                                            The Airlines Phone Number +1 (888) 660-0563 provides reliable information on policies, schedules, and routes for customers to make informed travel decisions. The professionals who man the phone lines are knowledgeable about the airline's policies, schedules, and routes.
+                                        </p>
+        
+                                        <div class="post-tags d-flex flex-wrap justify-content-center">
+                                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                                <!-- post related -->
+                                <div class="post-realted py-2">
+                                    <div class="row justify-content-center">
+                                        <div class="prev">
+                                            <div class="py-2">
+                                                <a href="#" class="display-2 text-dark">
+                                                    <i class="fas fa-chevron-left"></i> 
+                                                    Previous Post
+                                                </a>
+                                            </div>
+                                            <article class="article text-center">
+                                                <div class="d-flex">
+                                                    <a href="#">
+                                                        <img src="./assets/img9.jpg" class="object-fit" alt="">
+                                                    </a>
+                                                    <div class="cart-body px-1">
+                                                        <div class="category">
+                                                            <a href="#" class="link text-primary text-secondary">Fashion</a>
+                                                        </div>
+                                                        <a href="#" class="text-title display-1 text-dark">
+                                                            Looking for some feedback for this rejected track
+                                                            technology
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="next text-right">
+                                            <div class="py-2">
+                                                <a href="#" class="display-2 text-dark">
+                                                    Next Post 
+                                                    <i class="fas fa-chevron-right"></i> 
+                                                </a>
+                                            </div>
+                                            <article class="article text-center">
+                                                <div class="d-flex">
+                                                    <a href="#">
+                                                        <img src="./assets/img8.jpg" class="object-fit" alt="">
+                                                    </a>
+                                                    <div class="cart-body px-1">
+                                                        <div class="category">
+                                                            <a href="#" class="link text-primary text-secondary">Fashion</a>
+                                                        </div>
+                                                        <a href="#" class="text-title display-1 text-dark">
+                                                            Looking for some feedback for this rejected track
+                                                            technology
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- comments -->
+                                <!-- <div class="post-comments py-2">
+                                    <h3 class="text-center display-1 secondary-title py-2">2 Comments</h3> -->
+        
+                                    <div class="comment-details">
+                                        <div class="comment-item py-2">
+                                            <!-- <div class="d-flex">
+                                                <div class="avatar px-2">
+                                                    <img src="./assets/face/face1.png" class="rounded" alt="">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <h5 class="display-2 m-0">Brandon Kelly</h5>
+                                                    <p class="title-secondary text-dark">
+                                                        Thanks for the information. After reading this article, Maharashtra will become the all-time favorite destination for people who are looking for natural beauty. I hope travelers will enjoy their journey with lots of options.
+                                                    </p>
+                                                </div>
+                                            </div>  -->
+        
+                                            <!-- comment reply -->
+                                             <!-- <div class="reply py-2">
+                                                <div class="d-flex">
+                                                    <div class="avatar px-2">
+                                                        <img src="./assets/face/face5.jpeg" class="rounded" alt="">
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <h5 class="display-2 m-0">Devdutt</h5>
+                                                        <p class="title-secondary text-dark">
+                                                            Awesome places indeed. But Kerala is my favorite destination during the autumn because of its lush greenery, stunning landscapes and verdant mountains. It is surely one of the top 5 honeymoon destinations in India. To be added, Kerala is extremely popular for its ancient Ayurveda treatments and therapies during the monsoon.
+                                                            Must read for the best places in Kerala for Ayurveda therapies in Kerala, helping you to regain the harmony of mind, body and spirit :
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div> 
+<!--         
+                                         <div class="comment-item py-2">
+                                            <div class="d-flex">
+                                                <div class="avatar px-2">
+                                                    <img src="./assets/face/face3.jpg" class="rounded" alt="">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <h5 class="display-2 m-0">Brandon Kelly</h5>
+                                                    <p class="title-secondary text-dark">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                 </div>  
+                                     
+                                    <!-- comment form -->
+                                    <div class="comment-form">
+        
+                                        <h3 class="text-center display-1 secondary-title py-2">Leave Comment</h3>
+        
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="text" class="form-control" placeholder="Website">
+                                        </div>
+        
+                                        <textarea class="form-control mt-3" placeholder="Message" rows="10"></textarea>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary display-2 text-light mt-2">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <!-- .post footer -->
+                        </div>
+                        <div class="col-4">
+                            <aside id="sidebar" class="px-1">
+
+                                <!-- categories -->
+                                <section class="categories">
+                                    <h2 class="text-center text-dark">Categories</h2>
+
+                                    <a href="/sidebar.html" class="d-flex justify-content-between text-dark">
+                                        <span>Travel</span>
+                                        <!-- <span>5</span> -->
+                                    </a>
+                                    <a href="/pizza.html" class="d-flex justify-content-between text-dark">
+                                        <span>Food</span>
+                                        <!-- <span>8</span> -->
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Technology</span>
+                                        <!-- <span>3</span> -->
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Fashion</span>
+                                        <!-- <span>2</span> -->
+                                    </a>
+                                    
+                                </section>
+
+                                <!-- Trending post -->
+                                <section class="trending-post mt-3">
+
+                                    <h2 class="text-center text-dark py-2">Trending Post</h2>
+
+                                    <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="./assets/img1.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="./assets/img2.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                        </div>
+
+                                           <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="./assets/img3.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="./assets/img4.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </section>
+
+                            </aside>
+                        </div>
+                    </div>
+
+
+                </section>
+            <!-- .Post Content -->
+
+            <!-- Swiper slider -->
+                <section class="slider">
+                    <div class="container">
+
+                        <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="./assets/slider/img1.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                     <!-- Slides -->
+                                      <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="./assets/slider/img2.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                     <!-- Slides -->
+                                      <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="./assets/slider/img3.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                        <!-- Slides -->
+                                             <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="./assets/slider/img4.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <img src="./assets/slider/img5.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./assets/slider/img6.jpg" class="img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                                <!-- Slides -->
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img src="./assets/slider/img7.jpg" class="img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                                    <!-- Slides -->
+
+                                </div>
+                            </div>
 
                     </div>
-                </div>
-                <div class="col-3">
-                    <h2 class="footer-title secondary-title">Feature Post</h2>
+                </section>
+             <!-- .Swiper slider -->
 
-                    <div class="feature-post">
-                        <div class="flex-item">
+       </main>
+    <!-- .Main Site -->
+
+    <!-- footer -->
+       <footer id="footer">
+           <div class="container">
+               <div class="row mb-3">
+                   <div class="col-3">
+                       <h2 id="About" class="footer-title secondary-title">About Us</h2>
+
+                    
+                       <div class="secondary-title text-secondary">
+                        <p class="mt-2 ">
+                            Welcome to Inked Insights, your go-to destination for insightful and engaging content on food,travel,technology and many more. Our mission is to empower and inspire readers by delivering high-quality articles that inform, entertain, and provoke thoughtful discussions.
+                        </p>
+                        
+                        <address>
+                            <i class="fas fa-map-marker-alt text-primary"></i> 
+                            Hyderabad
+                        </address>
+
+                        <div class="phone">
+                            <i class="fas fa-mobile text-primary"></i> 
+                            123-456-789
+                        </div>
+
+                        <div class="email">
+                            <i class="fas fa-envelope text-primary"></i> 
+                            inkedinsights@gmail.com
+                        </div>
+
+                   </div>
+                   </div>
+                   <div class="col-3">
+                       <h2 class="footer-title secondary-title">Feature Post</h2>
+
+                       <div class="feature-post">
+                           <div class="flex-item">
+                               <article class="article">
+                                   <div class="d-flex">
+                                       <a href="#">
+                                           <img src="./assets/img9.jpg" class="object-fit px-1" alt="">
+                                           <div class="px-1">
+                                               <a href="#" class="text-title display-2 text-dark">
+                                                Looking for some feedback for this rejected track
+                                                technology
+                                               </a>
+                                               <p class="secondary-title text-secondary display-3">
+                                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
+                                               </p>
+                                           </div>
+                                       </a>
+                                   </div>
+                               </article>
+                           </div>
+                           <div class="flex-item">
                             <article class="article">
                                 <div class="d-flex">
                                     <a href="#">
-                                        <img src="./assets/img9.jpg" class="object-fit px-1" alt="">
+                                        <img src="./assets/img1.jpg" class="object-fit px-1" alt="">
                                         <div class="px-1">
                                             <a href="#" class="text-title display-2 text-dark">
                                              Looking for some feedback for this rejected track
@@ -196,90 +609,72 @@
                                     </a>
                                 </div>
                             </article>
-                        </div>
-                        <div class="flex-item">
-                         <article class="article">
-                             <div class="d-flex">
-                                 <a href="#">
-                                     <img src="./assets/img1.jpg" class="object-fit px-1" alt="">
-                                     <div class="px-1">
-                                         <a href="#" class="text-title display-2 text-dark">
-                                          Looking for some feedback for this rejected track
-                                          technology
-                                         </a>
-                                         <p class="secondary-title text-secondary display-3">
-                                              <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
-                                         </p>
-                                     </div>
-                                 </a>
                              </div>
-                         </article>
-                          </div>
-                          <div class="flex-item">
-                             <article class="article">
-                                 <div class="d-flex">
-                                     <a href="#">
-                                         <img src="./assets/img2.jpg" class="object-fit px-1" alt="">
-                                         <div class="px-1">
-                                             <a href="#" class="text-title display-2 text-dark">
-                                              Looking for some feedback for this rejected track
-                                              technology
-                                             </a>
-                                             <p class="secondary-title text-secondary display-3">
-                                                  <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
-                                             </p>
-                                         </div>
-                                     </a>
-                                 </div>
-                             </article>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                     <h2 class="footer-title secondary-title">Categories</h2>
+                             <div class="flex-item">
+                                <article class="article">
+                                    <div class="d-flex">
+                                        <a href="#">
+                                            <img src="./assets/img2.jpg" class="object-fit px-1" alt="">
+                                            <div class="px-1">
+                                                <a href="#" class="text-title display-2 text-dark">
+                                                 Looking for some feedback for this rejected track
+                                                 technology
+                                                </a>
+                                                <p class="secondary-title text-secondary display-3">
+                                                     <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="col-3">
+                        <h2 class="footer-title secondary-title">Tags</h2>
 
-                     <div class="tags"id="category">
-                         <div class="d-flex flex-wrap">
-                             <a href="#" class="nav-link btn bg-light">Travel</a>
-                             <a href="#" class="nav-link btn bg-light">Food</a>
-                             <a href="#" class="nav-link btn bg-light">Lifestyle</a>
-                             <a href="#" class="nav-link btn bg-light">Techonogy</a>
-                             <a href="#" class="nav-link btn bg-light">Fashion</a>
-                         </div>
-                     </div>
+                        <div class="tags" id="contact">
+                            <div class="d-flex flex-wrap">
+                                <a href="/sidebar.html" class="nav-link btn bg-light">Travel</a>
+                                <a href="/pizza.html" class="nav-link btn bg-light">Food</a>
+                                <a href="#" class="nav-link btn bg-light">Lifestyle</a>
+                                <a href="#" class="nav-link btn bg-light">Technology</a>
+                                <a href="#" class="nav-link btn bg-light">Fashion</a>
+                            </div>
+                        </div>
 
-                     <h2 class="footer-title secondary-title mt-2">Social</h2>
+                        <h2 class="footer-title secondary-title mt-2">Social</h2>
 
-                     <div class="tags social">
-                         <div class="d-flex flex-wrap">
-                             <a href="#" class="nav-link btn bg-light"><i class="fab fa-facebook-f"></i></a>
-                             <a href="#" class="nav-link btn bg-light"><i class="fab fa-twitter"></i></a>
-                             <a href="#" class="nav-link btn bg-light"><i class="fab fa-instagram"></i></a>
-                             <a href="#" class="nav-link btn bg-light"><i class="fab fa-dribbble"></i></a>
-                         </div>
-                     </div>
+                        <div class="tags social">
+                            <div class="d-flex flex-wrap">
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="nav-link btn bg-light"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
 
-                </div>
-            </div>
+                   </div>
+               </div>
 
-            <!-- copyrights  -->
-            <div class="copyrights">
-                <p class="text-center text-secondary display-2">
-                     © 2023 <a href="#" class="text-primary">InkedInsights</a> - Personal Blog Theme. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
- <!-- .footer -->
+               <!-- copyrights  -->
+               <div class="copyrights">
+                   <p class="text-center text-secondary display-2">
+                        © 2023<a href="#" class="text-primary">InkedInsights</a> - Personal Blog Theme. All rights reserved.
+                   </p>
+               </div>
+           </div>
+       </footer>
+    <!-- .footer -->
 
 
- <!-- masonry libray for horizontal grid -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+    <!-- masonry libray for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
 
- <!-- swiper slider cdn -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
+    <!-- swiper slider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
 
- <!-- custom javascript main.js file -->
- <script src="main.js"></script>
+    <!-- custom javascript main.js file -->
+    <script src="main.js"></script>
 </body>
 </html>
