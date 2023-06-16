@@ -77,3 +77,18 @@ themeToggleBtn.addEventListener('click', function () {
         localStorage.removeItem('currentTheme');
     }
 });
+function submitForm() {
+    // Code to submit the form goes here (e.g., AJAX request)
+  
+    // // Assuming the submission was successful, display the success message
+    // var messageContainer = document.getElementById("message-container");
+    // messageContainer.textContent = "Submitted successfully";
+    alert("Submitted Successfully!");
+  }
+  
+  // Example usage: Call the submitForm() function when the form is submitted
+  document.getElementById("comment-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    submitForm();
+  });
+  
