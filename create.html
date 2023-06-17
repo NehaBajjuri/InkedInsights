@@ -4,6 +4,7 @@
   <title>Create Blog Post</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="create.css">
+
   
   
     <!-- font awesome icons cdn -->
@@ -72,8 +73,9 @@
             <!-- <img src="/assets/slider/travel2.avif"> -->
             <img src="./assets/img15.jpeg" class="thumbnail" alt="ChatGPT">
         </div>
-        <form action="/process-post" method="post" enctype="multipart/form-data">
-
+        <form >
+            <!-- action="/process-post" -->
+            <!-- method="post" enctype="multipart/form-data" -->
         
           <div class="form-group">
             <h1 class="text-center display-1 secondary-title py-2">Create Blog Post</h1>
@@ -101,8 +103,10 @@
             <input type="file" id="image" name="image" accept="image/*" required>
           </div>
           <div class="form-group">
-            <input type="submit" value="Create Post">
+            <input type="submit" class="form__button" value="Create Post" onclick="createPage()">
+            <!-- <button class="form__button" type="submit" onclick="createPage()" required>Post</button> -->
           </div>
+       
         </form>
       </div>
     </body>
@@ -243,5 +247,6 @@
 
 <!-- custom javascript main.js file -->
 <script src="main.js"></script>
+<script src="login.js"></script>
 </body>
 </html>

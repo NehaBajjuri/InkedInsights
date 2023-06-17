@@ -6,8 +6,14 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.add(`form__message--${type}`);
 }
 function openPage() {
+
     window.open('create.html', '_blank');
   }
+  function createPage() {
+    
+    window.open('index.html', '_blank');
+  }
+
 
 function setInputError(inputElement, message) {
     inputElement.classList.add("form__input--error");
